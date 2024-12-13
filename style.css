@@ -82,7 +82,7 @@ header::after {
     text-align: center;
     color: #fff;
     font-weight: 300;
-    gap: 1.8em;
+    gap: 0.8em;
     /* padding: 1.2em; */
 }
 
@@ -109,6 +109,7 @@ header::after {
 .comp-group {
     width: 100%;
     margin-top: 1.5em;
+    margin-bottom: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +126,6 @@ header::after {
     justify-content: center;
     position: relative;
     gap: 2em;
-    margin: 2em 0 6em;
 }
 
 .comp-box h3 {
@@ -204,6 +204,23 @@ header::after {
 
 /* Titre section */
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1A1A;
+    height: 2em;
+    position: relative;
+    margin-top: 8em;
+}
+
+.section-title h2 {
+    color: #1A1A1A;
+    font-size: 5em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0.1em;
+}
 
 /* ________________________________ */
 
@@ -226,10 +243,23 @@ header::after {
     gap: 2.1em;
 }
 
+/* Footer : Contact */
 
-/* temporaire */
-
-hr {
-    width: 100px;
+.contact {
+    background-color: #1A1A1A;
+    height: 12em;
+    position: relative;
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.contact h2 {
+    position: absolute;
+    color: #1A1A1A;
+    font-size: 5em;
+    text-transform: uppercase;
+    bottom: 2.7em;
+    line-height: 0;
+}
