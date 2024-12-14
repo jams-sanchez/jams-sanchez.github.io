@@ -227,7 +227,6 @@ header::after {
 /* Emplacement projets  */
 
 .project-group {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,11 +246,12 @@ header::after {
 
 .contact {
     background-color: #1A1A1A;
+    color: #fff;
     height: 12em;
     position: relative;
     margin-top: 8em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -260,6 +260,29 @@ header::after {
     color: #1A1A1A;
     font-size: 5em;
     text-transform: uppercase;
-    bottom: 2.7em;
+    bottom: 2.75em;
     line-height: 0;
+}
+
+.contact-mail,
+.contact-localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-localisation img,
+.contact-mail img {
+    width: 32px;
+}
+
+.contact-linkgit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.contact-linkgit img {
+    width: 4em;
 }
