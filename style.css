@@ -76,6 +76,7 @@ header::after {
     background: rgba(255, 255, 255, 0.507);
     border: 3px solid var(--main-text);
     max-width: 41em;
+    min-width: 32em;
     width: 55%;
     height: 14em;
 }
@@ -254,7 +255,7 @@ header::after {
     font-size: 5em;
     text-transform: uppercase;
     position: absolute;
-    bottom: 0.1em;
+    bottom: 0.15em;
 }
 
 /* ________________________________ */
@@ -446,6 +447,7 @@ header::after {
 
     .header-title {
         height: 9em;
+        width: 90%;
     }
 
     .profil-box {
@@ -569,7 +571,7 @@ header::after {
 @media screen and (max-width: 527px) {
 
     .header-title {
-        width: 90%;
+        min-width: 90%;
     }
 
     .comp-group {
