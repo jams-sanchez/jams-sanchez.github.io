@@ -81,9 +81,9 @@ header::after {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.507);
+    background: rgba(255, 255, 255, 0.192);
     backdrop-filter: blur(1px);
-    border: 3px solid var(--main-text);
+    border: 3px solid #ffffff2d;
     max-width: 41em;
     min-width: 32em;
     width: 55%;
@@ -95,6 +95,10 @@ header::after {
     font-size: 3.5em;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.header-title h3 {
+    font-weight: 600;
 }
 
 /* DESCRIPTION */
@@ -148,10 +152,11 @@ header::after {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .comp-group {
+    width: 90%;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -159,10 +164,12 @@ header::after {
 .comp-box {
     display: flex;
     width: 25%;
-    padding: 2em 3em;
+    padding-bottom: 1rem;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     gap: 2em;
 }
@@ -189,6 +196,7 @@ header::after {
 
 .left {
     align-items: flex-start;
+    padding-left: 1rem;
 }
 
 .left::after {
@@ -227,6 +235,7 @@ header::after {
 
 .right {
     align-items: flex-end;
+    padding-right: 1rem;
 }
 
 .right::after {
@@ -260,7 +269,9 @@ header::after {
 
 .section-title h2,
 footer h2 {
-    height: 4.8rem;
+    line-height: 70%;
+    display: flex;
+    justify-content: center;
     color: var(--main-bg-darker);
     font-size: 5em;
     text-transform: uppercase;
@@ -377,6 +388,8 @@ hr {
 
 footer {
     margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 
 footer h2 {
@@ -384,9 +397,10 @@ footer h2 {
 }
 
 .contact-box {
+    width: 100%;
+    height: 8rem;
     background-color: var(--main-bg-darker);
     color: var(--main-text);
-    height: 12em;
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -426,7 +440,7 @@ footer h2 {
 
 /*  media max 1023px */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
 
     .header-title h1 {
         font-size: 3em;
@@ -436,8 +450,13 @@ footer h2 {
         height: 11em;
     }
 
-    .comp-box {
-        padding: 2em 1.5em;
+    .section-title h2,
+    footer h2 {
+        font-size: 4rem;
+    }
+
+    hr {
+        height: 3rem;
     }
 
     .project-group {
@@ -447,20 +466,18 @@ footer h2 {
     }
 
     .project-box {
-        width: 90%;
+        width: 98%;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: flex-end;
     }
 
-    .project-box img {
-        width: 38%;
-        height: 100%;
+    .project-screenshot {
+        width: 40%;
     }
 
     .project-description {
-        width: 62%;
+        width: 60%;
     }
 
     .contact-linkgit {
@@ -497,38 +514,63 @@ footer h2 {
 
     .comp-group {
         width: 100%;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     .comp-box {
-        width: 30%;
+        width: 100%;
         margin: 0 auto;
         padding: 1em 0.5em;
     }
 
-    .project-group {
-        margin: 5em auto;
+    .right,
+    .left {
+        align-items: center;
     }
 
-    .contact {
+    
+    .project-box {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contact-box {
         flex-direction: column;
-        height: 14em;
+        justify-content: center;
+        height: 12rem;
+        gap: 1rem;
     }
 
-    .contact-mail,
+    .contact-linkgit {
+        order: 0;
+    }
+
     .contact-localisation {
-        margin: 1em auto;
+        order: 2;
     }
 
-    .contact h2 {
-        bottom: 3.18em;
+    .contact-mail {
+        background-color: #f2962b;
+        order: 1;
+    }
+    
+    .contact-localisation img,
+    .contact-mail img {
+        width: 20px;
+    }
+
+    .contact-localisation,
+    .contact-mail,
+    .contact-linkgit {
+        width: 100%;
     }
 }
 
 /*  media max 650px */
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
 
     .header-title h1 {
         font-size: 2em;
@@ -637,5 +679,5 @@ footer h2 {
         gap: 3.5em;
     }
 
-}
+} */
 
