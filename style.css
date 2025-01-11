@@ -6,7 +6,6 @@
     --tech-bg: #E9E9E9;
     --tech-border: #D8D8D8;
     --tech-text: #A0A0A0;
-
 }
 
 * {
@@ -25,6 +24,15 @@ body {
 
 body {
     background-color: var(--main-bg-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 4rem;
 }
 
 a:visited {
@@ -74,6 +82,7 @@ header::after {
     justify-content: center;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(1px);
     border: 3px solid var(--main-text);
     max-width: 41em;
     min-width: 32em;
@@ -90,11 +99,15 @@ header::after {
 
 /* DESCRIPTION */
 
-.profil-box {
+.profil-box,
+.comp-group {
     width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.profil-box {
+    justify-content: center;
 }
 
 .profil-text {
@@ -127,22 +140,20 @@ header::after {
     background-clip: content-box;
 }
 
-.profil-box,
-.comp-group {
-    max-width: 75em;
-    margin: 0 auto;
-}
-
 /* Compétences */
 
-.comp-group {
-    margin-top: 1.5em;
-    margin-bottom: 4em;
+.cat-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+.comp-group {
+    justify-content: space-between;
     flex-direction: row;
-    /* gap: 2%; */
 }
 
 .comp-box {
@@ -241,21 +252,25 @@ header::after {
 /* Titre Projets */
 
 .section-title {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: var(--main-bg-darker);
-    height: 2em;
-    position: relative;
-    margin-top: 9em;
 }
 
-.section-title h2 {
+.section-title h2,
+footer h2 {
+    height: 4.8rem;
     color: var(--main-bg-darker);
     font-size: 5em;
     text-transform: uppercase;
-    position: absolute;
-    bottom: 0.15em;
+} 
+
+hr {
+    background-color: var(--main-bg-darker);
+    width: 100%;
+    height: 4rem;
+    border: none;
 }
 
 /* ________________________________ */
@@ -263,7 +278,7 @@ header::after {
 /* Boite Projets  */
 
 .project-group {
-    margin: 5.5em auto;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     column-gap: 2%;
@@ -360,24 +375,22 @@ header::after {
 
 /* Footer : Contact */
 
-.contact {
+footer {
+    margin-top: 6rem;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.contact-box {
     background-color: var(--main-bg-darker);
     color: var(--main-text);
     height: 12em;
     position: relative;
-    margin-top: 9em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.contact h2 {
-    position: absolute;
-    color: var(--main-bg-darker);
-    font-size: 5em;
-    text-transform: uppercase;
-    bottom: 2.75em;
-    line-height: 0;
 }
 
 .contact-mail,
@@ -403,6 +416,13 @@ header::after {
     width: 4em;
 }
 
+.copyright {
+    background-color: var(--main-bg-darker);
+    width: 100%;
+    height: 2rem;
+    color: var(--tech-text);
+    text-align: center;
+}
 
 /*  media max 1023px */
 
