@@ -43,7 +43,7 @@ a:hover {
 /* HAUT de PAGE */
 
 header {
-    background-image: url(/images/HEADER.png);
+    background-image: url(/images/HEADER.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -274,11 +274,12 @@ header::after {
 .project-box {
     background-color: var(--main-text);
     width: 100%;
+    height: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    border-radius: 1.5em 1.5em 0 0;
+    border-radius: 1em 1em 0 0;
     position: relative;
     border-bottom: 4px solid var(--main-orange);
     box-shadow: 60px 80px 140px -30px rgba(31, 31, 31, 0.50) inset;
@@ -286,30 +287,41 @@ header::after {
     gap: 1em;
 }
 
-.project-box img {
-    width: 98%;
-    height: 17em;
-    border-radius: 1.5em 1.5em 0 0;
+.project-screenshot {
+    width: 100%;
+    height: 17rem;
     margin: 0 auto;
-    z-index: 3;
+    border: 1px solid var(--main-text);
+    border-radius: 1em 1em 0 0;
+}
+
+.project-box img {
+    border: 1px solid var(--main-text);
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: top;
+    z-index: 3;
+
 }
 
 .project-description {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 1em;
+    flex: 1;
 }
 
 .project-title {
     color:var(--main-bg-color);
-    padding: 1em 0 0 2em;
+    padding-left: 2em;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .project-title h3 {
@@ -318,8 +330,9 @@ header::after {
 
 .project-tech {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.5em;
 }
 
@@ -333,10 +346,12 @@ header::after {
 
 .project-text {
     color:var(--tech-text);
-    padding: 0 0.5em 1em 1em;
+    padding: 0 0.2em 0.5em 0.5em;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2em;
+    flex: 2;
 }
 
 .project-text a {
