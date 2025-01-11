@@ -20,6 +20,7 @@ Ce projet de portfolio me permet de mettre en avant mes compétences développé
 
 ## 📒 Projet d'améliorations
 
+- [ ] Menu ?
 - [ ] Dark/light mode
 - [ ] Un moyen de choisir la langue du site
 
