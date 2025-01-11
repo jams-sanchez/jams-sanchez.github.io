@@ -94,7 +94,7 @@ header::after {
     border: 3px solid #ffffff2d;
     /* max-width: 41em; */
     /* min-width: 32em; */
-    width: 55%;
+    width: 41rem;
     height: 14em;
 }
 
@@ -406,16 +406,10 @@ footer h2 {
 
 @media screen and (max-width: 1025px) {
 
-    .header-title h1 {
-        font-size: 3em;
+    header {
+        height: 35rem;
     }
 
-    .header-title {
-        width: 70%;
-        height: 11em;
-    }
-
-    .section-title h2,
     footer h2 {
         font-size: 4rem;
     }
@@ -471,7 +465,7 @@ footer h2 {
 
     .header-title {
         width: 85%;
-        height: 9em;
+        height: 11rem;
     }
 
     .header-title h1 {
@@ -579,12 +573,21 @@ footer h2 {
     }
 }
 
-/*  media max 425px */
+/*  media max 644px */
 
 @media screen and (max-width: 644px) {
 
     main {
         margin-top: 2rem;
+    }
+
+    header {
+        height: 20rem;
+    }
+
+    .header-title {
+        width: 25rem;
+        height: 8rem;
     }
 
     .header-title h1 {
@@ -616,9 +619,14 @@ footer h2 {
     }
 }
 
-/*  media max 375px */
+/*  media max 425px */
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 425px) {
+
+    .header-title {
+        width: 80%;
+        height: 8rem;
+    }
 
     .header-title h1 {
         font-size: 1.5rem;
