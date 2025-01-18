@@ -3,7 +3,7 @@
 Ce projet de portfolio me permet de mettre en avant mes compétences développées, de partager les projets effectués avec l'école LaPlateforme ainsi de futurs projets personnels!
 
 > [!NOTE]
-> Ce site sera mis à jour fréquemment afin de mettre en place de nouvelles compétences aquises et pas seulement du HTML/CSS. 😁
+> Ce site sera mis à jour fréquemment afin d'essayer de nouvelles compétences aquises et pas seulement du HTML/CSS. 😁
 
 ## 💻 Les technologies
 
@@ -20,6 +20,7 @@ Ce projet de portfolio me permet de mettre en avant mes compétences développé
 
 ## 📒 Projet d'améliorations
 
+- [ ] Menu ?
 - [ ] Dark/light mode
 - [ ] Un moyen de choisir la langue du site
 
