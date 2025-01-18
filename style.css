@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #1F1F1F;
-    --main-bg-darker: #1a1a1a;
-    --main-text: #fff;
-    --main-orange: #f2962b;
+    --main-bg-color: #1A1A1A;
+    --main-bg-darker: #2F2F2F;
+    --main-orange: #f1952b;
+    --main-text: #EEEEEE;
     --tech-bg: #E9E9E9;
     --tech-border: #D8D8D8;
-    --tech-text: #A0A0A0;
+    --tech-text: #525252;
 }
 
 * {
@@ -64,7 +64,7 @@ header {
     background-repeat: no-repeat;
     background-position: top;
     width: 100%;
-    height: 40em;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -197,6 +197,7 @@ header::after {
 }
 .logo img {
     width: 42px;
+    border-radius: 50%;
 }
 
 /* Boite */
@@ -211,7 +212,7 @@ header::after {
     background: linear-gradient(90deg, rgba(255,255,255,0) 25%, rgba(255,255,255,0.8099614845938375) 50%, rgba(255,255,255,0) 75%);
 }
 
-/* Titre Projets */
+/* Titre Catégories */
 
 .section-title {
     width: 100%;
@@ -233,7 +234,7 @@ footer h2 {
 hr {
     background-color: var(--main-bg-darker);
     width: 100%;
-    height: 4rem;
+    height: 0.9rem;
     border: none;
 }
 
@@ -369,19 +370,18 @@ footer h2 {
     gap: 1em;
 }
 
-.contact-localisation img,
-.contact-mail img {
-    width: 32px;
+.contact-localisation img {
+    width: 24px;
 }
 
-.contact-linkgit {
+.contact-linkGitMail {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3em;
 }
-.contact-linkgit img {
-    width: 4em;
+.contact-linkGitMail img {
+    width: 48px;
 }
 
 .copyright {
@@ -415,10 +415,6 @@ footer h2 {
         font-size: 4rem;
     }
 
-    hr {
-        height: 3rem;
-    }
-
     .project-group {
         display: flex;
         flex-direction: row;
@@ -439,7 +435,7 @@ footer h2 {
         width: 60%;
     }
 
-    .contact-linkgit {
+    .contact-linkGitMail {
         gap: 1em;
     }
 }
@@ -549,7 +545,7 @@ footer h2 {
         gap: 1rem;
     }
 
-    .contact-linkgit {
+    .contact-linkGitMail {
         order: 0;
     }
 
@@ -569,7 +565,7 @@ footer h2 {
 
     .contact-localisation,
     .contact-mail,
-    .contact-linkgit {
+    .contact-linkGitMail {
         width: 100%;
     }
 }
