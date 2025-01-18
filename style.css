@@ -335,6 +335,7 @@ hr {
 
 .project-text a {
     width: 5.5em;
+    color: var(--main-bg-darker)
 }
 
 /* Footer : Contact */
